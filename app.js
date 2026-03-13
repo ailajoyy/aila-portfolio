@@ -83,9 +83,9 @@ const nav = document.getElementById('nav');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
-    nav.style.background = 'rgba(255, 255, 255, 0.95)';
+    nav.style.background = 'rgba(10, 10, 20, 0.95)';
   } else {
-    nav.style.background = 'rgba(255, 255, 255, 0.85)';
+    nav.style.background = 'rgba(10, 10, 20, 0.8)';
   }
 });
 
