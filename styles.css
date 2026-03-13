@@ -126,7 +126,7 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: #0a0a14;
+  background: var(--bg);
 }
 
 .hero-bg {
@@ -147,20 +147,20 @@ body {
 
 .wave-1 {
   bottom: 20%;
-  background: linear-gradient(90deg, #4466ff55, #7b5ea766, #c471ed55, #4466ff55);
+  background: linear-gradient(90deg, #4466ff22, #7b5ea733, #c471ed22, #4466ff22);
   animation-duration: 12s;
 }
 
 .wave-2 {
   bottom: 15%;
-  background: linear-gradient(90deg, #c471ed44, #4466ff55, #12d8fa44, #c471ed44);
+  background: linear-gradient(90deg, #c471ed1a, #4466ff22, #12d8fa1a, #c471ed1a);
   animation-duration: 15s;
   animation-delay: -3s;
 }
 
 .wave-3 {
   bottom: 25%;
-  background: linear-gradient(90deg, #7b5ea744, #c471ed44, #4466ff44, #7b5ea744);
+  background: linear-gradient(90deg, #7b5ea71a, #c471ed1a, #4466ff1a, #7b5ea71a);
   animation-duration: 18s;
   animation-delay: -6s;
 }
@@ -177,7 +177,7 @@ body {
   width: 600px;
   height: 600px;
   transform: translateX(-50%);
-  background: radial-gradient(circle, #4466ff15, transparent 70%);
+  background: radial-gradient(circle, #4466ff10, transparent 70%);
   pointer-events: none;
 }
 
@@ -203,7 +203,7 @@ body {
 }
 
 .hero-title .hero-line:first-child {
-  background: linear-gradient(90deg, #ffffff, #e0e0f0);
+  background: linear-gradient(90deg, #1a1a2e, #2a2a50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -258,13 +258,13 @@ body {
 
 .btn-outline-white {
   background: transparent;
-  color: white;
-  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: var(--text);
+  border: 1.5px solid var(--border);
 }
 
 .btn-outline-white:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: white;
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
 .btn-outline {
