@@ -147,20 +147,20 @@ body {
 
 .wave-1 {
   bottom: 20%;
-  background: linear-gradient(90deg, #4466ff66, #c471ed77, #ff6b9555, #4466ff66);
+  background: linear-gradient(90deg, #7b5ea755, #9b6ec888, #7b5ea755);
   animation-duration: 12s;
 }
 
 .wave-2 {
   bottom: 15%;
-  background: linear-gradient(90deg, #c471ed55, #12d8fa66, #4466ff55, #c471ed55);
+  background: linear-gradient(90deg, #9b6ec844, #7b5ea766, #9b6ec844);
   animation-duration: 15s;
   animation-delay: -3s;
 }
 
 .wave-3 {
   bottom: 25%;
-  background: linear-gradient(90deg, #7b5ea755, #ff6b9544, #12d8fa55, #7b5ea755);
+  background: linear-gradient(90deg, #7b5ea733, #9b6ec855, #7b5ea733);
   animation-duration: 18s;
   animation-delay: -6s;
 }
