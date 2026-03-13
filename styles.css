@@ -141,26 +141,26 @@ body {
   height: 300px;
   left: -50%;
   border-radius: 40%;
-  opacity: 0.4;
+  opacity: 0.7;
   animation: waveMove 12s ease-in-out infinite;
 }
 
 .wave-1 {
   bottom: 20%;
-  background: linear-gradient(90deg, #4466ff22, #7b5ea733, #c471ed22, #4466ff22);
+  background: linear-gradient(90deg, #4466ff66, #c471ed77, #ff6b9555, #4466ff66);
   animation-duration: 12s;
 }
 
 .wave-2 {
   bottom: 15%;
-  background: linear-gradient(90deg, #c471ed1a, #4466ff22, #12d8fa1a, #c471ed1a);
+  background: linear-gradient(90deg, #c471ed55, #12d8fa66, #4466ff55, #c471ed55);
   animation-duration: 15s;
   animation-delay: -3s;
 }
 
 .wave-3 {
   bottom: 25%;
-  background: linear-gradient(90deg, #7b5ea71a, #c471ed1a, #4466ff1a, #7b5ea71a);
+  background: linear-gradient(90deg, #7b5ea755, #ff6b9544, #12d8fa55, #7b5ea755);
   animation-duration: 18s;
   animation-delay: -6s;
 }
