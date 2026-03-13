@@ -327,32 +327,15 @@ body {
   to { transform: rotate(360deg); }
 }
 
-.photo-placeholder {
+.photo-img {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--blue), var(--purple));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  font-weight: 800;
-  color: white;
-  letter-spacing: -1px;
+  object-fit: cover;
+  object-position: center top;
   box-shadow: 0 10px 40px var(--blue-glow);
   position: relative;
-  overflow: hidden;
-}
-
-.photo-placeholder::after {
-  content: 'Add your photo here';
-  position: absolute;
-  bottom: 8px;
-  font-size: 9px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  opacity: 0.6;
-  text-transform: uppercase;
+  border: 3px solid rgba(68, 102, 255, 0.3);
 }
 
 .section-title {
@@ -876,10 +859,9 @@ body {
     height: 300px;
   }
 
-  .photo-placeholder {
+  .photo-img {
     width: 180px;
     height: 180px;
-    font-size: 40px;
   }
 
   .ring-1 { width: 220px; height: 220px; }
