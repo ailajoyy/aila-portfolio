@@ -686,23 +686,17 @@ body {
   min-height: 200px;
 }
 
-.visual-1 {
-  background: linear-gradient(135deg, #0f1b4d, #1a1040, #0f1b4d);
-}
-
-.visual-2 {
-  background: linear-gradient(135deg, #1a0f3d, #0f1b4d, #1a0f3d);
-}
-
+.visual-1,
+.visual-2,
 .visual-3 {
-  background: linear-gradient(135deg, #0f2b3d, #0f1b4d, #0f2b3d);
+  background: #ffffff;
 }
 
 .portfolio-logo {
-  max-width: 160px;
-  max-height: 120px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  border-radius: 8px;
+  padding: 24px;
 }
 
 .portfolio-icon {
