@@ -332,8 +332,9 @@ body {
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 5%;
-  scale: 1.5;
+  object-position: center 20%;
+  scale: 1.7;
+  transform-origin: center 40%;
   box-shadow: 0 10px 40px var(--blue-glow);
   position: relative;
   border: 3px solid rgba(68, 102, 255, 0.3);
