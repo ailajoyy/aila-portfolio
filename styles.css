@@ -6,23 +6,23 @@
 }
 
 :root {
-  --bg: #0a0a14;
-  --bg-card: #0f1022;
-  --bg-card-hover: #141530;
-  --surface: #12122a;
-  --border: #1e1e3a;
+  --bg: #ffffff;
+  --bg-card: #f8f9fc;
+  --bg-card-hover: #f0f2f8;
+  --surface: #f3f4f8;
+  --border: #e2e4ee;
   --blue: #4466ff;
-  --blue-glow: #4466ff44;
-  --blue-light: #6688ff;
+  --blue-glow: #4466ff33;
+  --blue-light: #3355ee;
   --purple: #7b5ea7;
-  --purple-glow: #7b5ea744;
+  --purple-glow: #7b5ea733;
   --pink: #c471ed;
   --cyan: #12d8fa;
-  --text: #f0f0f8;
-  --text-secondary: #a0a0c0;
-  --text-muted: #6060880;
+  --text: #1a1a2e;
+  --text-secondary: #555570;
+  --text-muted: #8888a0;
   --gradient: linear-gradient(135deg, #4466ff, #7b5ea7, #c471ed);
-  --gradient-subtle: linear-gradient(135deg, #4466ff22, #7b5ea722);
+  --gradient-subtle: linear-gradient(135deg, #4466ff11, #7b5ea711);
 }
 
 html {
@@ -56,10 +56,10 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(10, 10, 20, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   transition: background 0.3s;
 }
 
@@ -126,6 +126,7 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  background: #0a0a14;
 }
 
 .hero-bg {
@@ -146,20 +147,20 @@ body {
 
 .wave-1 {
   bottom: 20%;
-  background: linear-gradient(90deg, #4466ff33, #7b5ea744, #c471ed33, #4466ff33);
+  background: linear-gradient(90deg, #4466ff55, #7b5ea766, #c471ed55, #4466ff55);
   animation-duration: 12s;
 }
 
 .wave-2 {
   bottom: 15%;
-  background: linear-gradient(90deg, #c471ed22, #4466ff33, #12d8fa22, #c471ed22);
+  background: linear-gradient(90deg, #c471ed44, #4466ff55, #12d8fa44, #c471ed44);
   animation-duration: 15s;
   animation-delay: -3s;
 }
 
 .wave-3 {
   bottom: 25%;
-  background: linear-gradient(90deg, #7b5ea722, #c471ed22, #4466ff22, #7b5ea722);
+  background: linear-gradient(90deg, #7b5ea744, #c471ed44, #4466ff44, #7b5ea744);
   animation-duration: 18s;
   animation-delay: -6s;
 }
@@ -202,7 +203,7 @@ body {
 }
 
 .hero-title .hero-line:first-child {
-  background: linear-gradient(90deg, #f0f0f8, #c0c0e0);
+  background: linear-gradient(90deg, #ffffff, #e0e0f0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -258,12 +259,22 @@ body {
 .btn-outline-white {
   background: transparent;
   color: white;
-  border: 1.5px solid rgba(255,255,255,0.4);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
 }
 
 .btn-outline-white:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-color: white;
+}
+
+.btn-outline {
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btn-outline:hover {
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
 .btn-lg {
@@ -475,7 +486,7 @@ body {
 
 .timeline-content.highlight-card {
   border-color: rgba(68, 102, 255, 0.3);
-  background: linear-gradient(135deg, var(--bg-card), #14143a);
+  background: linear-gradient(135deg, var(--bg-card), #eef0ff);
 }
 
 .highlight-badge {
@@ -663,26 +674,26 @@ body {
 }
 
 .visual-1 {
-  background: linear-gradient(135deg, #0f1b4d, #1a1040, #0f1b4d);
+  background: linear-gradient(135deg, #eef0ff, #e8e0f8, #eef0ff);
 }
 
 .visual-2 {
-  background: linear-gradient(135deg, #1a0f3d, #0f1b4d, #1a0f3d);
+  background: linear-gradient(135deg, #e8e0f8, #eef0ff, #e8e0f8);
 }
 
 .visual-3 {
-  background: linear-gradient(135deg, #0f2b3d, #0f1b4d, #0f2b3d);
+  background: linear-gradient(135deg, #e0f0f8, #eef0ff, #e0f0f8);
 }
 
 .portfolio-icon {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: rgba(68, 102, 255, 0.15);
+  background: rgba(68, 102, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--blue-light);
+  color: var(--blue);
 }
 
 .portfolio-info {
@@ -915,7 +926,7 @@ body {
     top: 64px;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 20, 0.98);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
     flex-direction: column;
     padding: 24px;
