@@ -931,6 +931,29 @@ body {
   opacity: 0.7;
 }
 
+.nonprofit-logo {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.nonprofit-btn {
+  display: inline-flex;
+  margin-top: 16px;
+  font-size: 13px;
+  padding: 10px 20px;
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+.nonprofit-btn:hover {
+  border-color: var(--pink);
+  color: var(--pink);
+  background: rgba(196, 113, 237, 0.1);
+}
+
 /* ===== CONTACT ===== */
 .contact {
   text-align: center;
