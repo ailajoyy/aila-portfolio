@@ -818,6 +818,53 @@ body {
   margin-top: 2px;
 }
 
+.sample-card-img {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  min-width: 160px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.sample-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.sample-card-img:hover .sample-img {
+  transform: scale(1.03);
+}
+
+.sample-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 12px;
+  background: linear-gradient(to top, rgba(10,10,20,0.95), transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sample-overlay .sample-type {
+  font-size: 9px;
+}
+
+.sample-overlay .sample-title {
+  font-size: 12px;
+  color: var(--text);
+}
+
+.sample-overlay .sample-link {
+  font-size: 10px;
+}
+
 /* ===== EDUCATION ===== */
 .edu-grid {
   display: grid;
