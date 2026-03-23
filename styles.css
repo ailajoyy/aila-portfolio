@@ -677,13 +677,20 @@ body {
 }
 
 .tag {
-  padding: 4px 12px;
-  background: rgba(68, 102, 255, 0.1);
-  border: 1px solid rgba(68, 102, 255, 0.2);
-  border-radius: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
   font-size: 11px;
-  color: var(--blue-light);
+  color: var(--text-secondary);
   font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.tag::before {
+  content: '·';
+  margin-right: 5px;
+  opacity: 0.4;
 }
 
 /* ===== SKILLS ===== */
