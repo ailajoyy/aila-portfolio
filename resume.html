@@ -128,15 +128,68 @@
       margin-bottom: 3px;
     }
 
-    /* Print */
+    /* Download button */
+    .download-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 999;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s;
+    }
+
+    .download-btn:hover { background: #333; }
+
+    .resume-body {
+      margin-top: 52px;
+    }
+
+    /* Print — 1 page, tight */
     @media print {
-      body { padding: 20px 36px; }
-      @page { margin: 0.5in; size: letter; }
+      .download-bar { display: none; }
+      .resume-body { margin-top: 0; }
+      body { padding: 0; font-size: 9.8px; }
+      @page { margin: 0.45in 0.5in; size: letter; }
+      ul { margin: 3px 0 10px 12px; }
+      ul li { margin-bottom: 2px; line-height: 1.45; }
+      .summary { margin-bottom: 10px; padding-bottom: 10px; }
+      .section-title { margin: 10px 0 6px; }
     }
   </style>
 </head>
 <body>
 
+  <!-- Download bar -->
+  <div class="download-bar">
+    <span>Aila Joy Macarulay — Resume</span>
+    <button class="download-btn" onclick="window.print()">
+      ↓ Download PDF
+    </button>
+  </div>
+
+  <div class="resume-body">
   <div class="name">Aila Joy Macarulay</div>
   <div class="contact">
     ailajoy8888@gmail.com &bull; 954.774.5146 &bull;
@@ -224,6 +277,8 @@
     <p><strong>Illuminating Kindness Non-Profit Corp.</strong> | Founder & President | August 2018 – Present | Coral Springs, FL</p>
     <p style="margin-left: 14px; color: #444;">Non-profit dedicated to spreading kindness, supporting underserved communities, and fostering a culture of compassion, especially in schools.</p>
   </div>
+
+  </div><!-- end resume-body -->
 
 </body>
 </html>
