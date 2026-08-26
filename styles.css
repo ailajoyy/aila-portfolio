@@ -119,8 +119,8 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  height: 100vh;
-  min-height: 600px;
+  height: 65vh;
+  min-height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,6 +214,44 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* ===== SCROLL INDICATOR ===== */
+.scroll-indicator {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scroll-indicator span {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 500;
+}
+
+.scroll-arrow {
+  width: 18px;
+  height: 18px;
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  transform: rotate(45deg);
+  animation: bounceArrow 2s ease-in-out infinite;
+}
+
+@keyframes bounceArrow {
+  0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.3; }
+  50% { transform: rotate(45deg) translateY(7px); opacity: 0.9; }
 }
 
 /* ===== BUTTONS ===== */
@@ -426,13 +464,11 @@ body {
 }
 
 .stat-number {
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+  text-shadow: 0 0 40px rgba(68, 102, 255, 0.4);
 }
 
 .stat-label {
